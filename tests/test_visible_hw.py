@@ -1,6 +1,6 @@
 import time
 
-from ..pages.accordion import Accordion
+from pages.accordion import Accordion
 
 
 def test_visible_accordion(browser):

@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 
-from ..components.components import Components
+from components.components import Components
 
 
 class Accordion:
