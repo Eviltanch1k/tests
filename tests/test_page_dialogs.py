@@ -1,4 +1,4 @@
-from .pages.modal_dialogs import ModalDialogs
+from ..pages.modal_dialogs import ModalDialogs
 
 
 def test_modal_elements(browser):
