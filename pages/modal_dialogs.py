@@ -14,11 +14,15 @@ class ModalDialogs:
             driver,
             (By.CSS_SELECTOR, "div.element-list.show ul.menu-list > li"),
         )
+        self.home_icon = Components(driver, (By.CSS_SELECTOR, "header a"))
 
-        self.home_icon = Components(
-            driver,
-            (By.CSS_SELECTOR, "header a"),
-        )
+        self.small_modal_button = Components(driver, (By.CSS_SELECTOR, "#showSmallModal"))
+        self.large_modal_button = Components(driver, (By.CSS_SELECTOR, "#showLargeModal"))
+
+        self.small_modal_close = Components(driver, (By.CSS_SELECTOR, "#closeSmallModal"))
+        self.large_modal_close = Components(driver, (By.CSS_SELECTOR, "#closeLargeModal"))
+
+        self.modal_overlay = Components(driver, (By.CSS_SELECTOR, ".modal.show"))
 
     def visit(self):
         print(f"Открываем страницу {self.name}: {self.url}")
